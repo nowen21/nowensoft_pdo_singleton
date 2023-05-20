@@ -1,4 +1,14 @@
 <?php
+
+/**
+ * Clase DBConnection
+ * Clase que representa una conexión a la base de datos.
+ *
+ * Autor: Ing. José Dúmar Jiménez Ruíz
+ * Fecha: 2023-05-20
+ * Email: nowen21@gmail.com
+ */
+
 class DBConnection
 {
     // Almacena las instancias de conexión

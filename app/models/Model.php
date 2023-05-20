@@ -214,4 +214,21 @@ class Model
         // Ejecuta la consulta y retorna el resultado
         return $statement->execute();
     }
+
+
+
+    public static function getQuery($queryxxx )
+    {
+        // Establece la conexión con la base de datos
+        self::setConnection();
+        
+        // Prepara la consulta
+        $statement = self::$connection->prepare($queryxxx);
+
+        // Ejecuta la consulta
+        $statement->execute();
+
+        // Retorna los resultados como un arreglo asociativo
+        return $statement->fetchAll(PDO::FETCH_ASSOC);
+    }
 }
